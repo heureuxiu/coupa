@@ -438,17 +438,34 @@
 
     <!-- JavaScript for Accordions -->
     <script>
-      const accordions = document.querySelectorAll("button[data-target]");
+       document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('button[data-target]');
+        let currentOpen = null;
 
-      accordions.forEach((button) => {
-        button.addEventListener("click", () => {
-          const content = document.getElementById(
-            button.getAttribute("data-target")
-          );
-          content.classList.toggle("hidden");
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+            const targetDiv = document.getElementById(targetId);
 
-          const icon = button.querySelector("svg");
-          icon.classList.toggle("rotate-180");
+            // Close the previously opened section
+            if (currentOpen && currentOpen !== targetDiv) {
+              currentOpen.classList.add('hidden');
+              // Rotate the previous button's arrow
+              const previousButton = document.querySelector(
+                `button[data-target="${currentOpen.id}"]`
+              );
+              previousButton.querySelector('svg').classList.remove('rotate-180');
+            }
+
+            // Toggle the current section
+            targetDiv.classList.toggle('hidden');
+            button.querySelector('svg').classList.toggle('rotate-180');
+
+            // Update the current open section
+            currentOpen = targetDiv.classList.contains('hidden')
+              ? null
+              : targetDiv;
+          });
         });
       });
     </script>
