@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Coupa Supplier Portal</title>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <div class="flex flex-col items-center py-6">
+      <!-- Image Section -->
+      <div class="w-[80%] mb-6">
+        <img
+          src="img.png"
+          alt="Coupa Supplier Portal"
+          class="rounded-lg shadow-md w-full h-auto"
+        />
+      </div>
+
+      <!-- Main Content Container -->
+      <div class="w-[80%] bg-white">
+        <div class="flex flex-col [80%] my-6 text-gray-700" style="text-align: justify;">
+          <p class="text-lg leading-relaxed">
+            Welcome to Coupa Spend Management System website. As part of our
+            ongoing commitment to improving efficiency and supplier experience,
+            we have transitioned to this new system. This change will streamline
+            our procurement processes and make it easier for you to do business
+            with us.
+          </p>
+          <p class="mt-4 text-lg leading-relaxed">
+            As a supplier, you have free access to the Coupa Supplier Portal
+            (CSP): a central online portal for bidding, receiving orders,
+            submitting invoices, and tracking payment status. The CSP enables
+            fast and comprehensive processing of all the steps of the
+            procurement cycle through extensive, efficient, and transparent
+            digital purchasing tools. This page will serve as your central guide
+            for all information relating to Coupa’s CSP.
+          </p>
+        </div>
+
+        <!-- Reusable Accordion Component -->
+
+        <div class="mb-4">
+          <button
+            class="flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            data-target="cspBenefits"
+          >
+            What can you do in the CSP?
+            <svg
+              class="ml-2 h-5 w-5 transition-transform duration-200"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden mt-2 p-4 border border-gray-200 rounded-md bg-gray-50"
+            id="cspBenefits"
+          >
+            <p class="mb-2 text-gray-700">
+              Coupa brings numerous benefits, including a user-friendly
+              interface, easy access from any device, faster processing times,
+              and real-time tracking of Invoices and Payments. It is designed to
+              make your experience smoother and more efficient. Benefits
+              include, but are not limited to:
+            </p>
+            <ul class="list-disc list-inside ml-6 text-gray-700">
+              <li class="mb-2">
+                Easily update your profile, including your company’s
+                registration documents and contact information.
+              </li>
+              <li class="mb-2">
+                Receive invites to bid, prepare, and submit your proposal for
+                all RFQs and RFPs through Coupa.
+              </li>
+              <li class="mb-2">
+                Get awarded and receive your Purchase Orders.
+              </li>
+              <li class="mb-2">
+                Submit your invoices and have real-time visibility on the
+                processing status of your payments.
+              </li>
+              <li class="mb-2">
+                ESG benefit through the reduction of manual paper transactions.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <button
+            class="flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            data-target="gettingStarted"
+          >
+            Getting Started With Coupa
+            <svg
+              class="ml-2 h-5 w-5 transition-transform duration-200"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden mt-2 p-4 border border-gray-200 rounded-md bg-gray-50"
+            id="gettingStarted"
+          >
+            <p>
+              To start using Coupa, you will first need to register. Here’s how:
+            </p>
+            <ol class="list-decimal list-inside ml-6 my-4">
+              <li>
+                Suppliers will receive an email notification for Profile
+                Information Request. Click “Join and Respond” which will
+                redirect you to Account creation Page.
+              </li>
+              <li>Fill in the form to create your account.</li>
+              <li>You will receive an email verification link.</li>
+              <li>Enter the verification code you received and click next.</li>
+              <li>
+                You will be redirected to the Coupa Supplier Portal (CSP).
+              </li>
+              <li>
+                Under “Information Request” fill in the supplier information and
+                submit for approval.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Walkthrough Guides Accordion -->
+        <div class="mb-4">
+          <button
+            class="flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            data-target="walkthroughGuides"
+          >
+            Walkthrough Guides
+            <svg
+              class="ml-2 h-5 w-5 transition-transform duration-200"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden mt-2 p-4 border border-gray-200 rounded-md bg-gray-50"
+            id="walkthroughGuides"
+          >
+            <h3 class="text-lg font-semibold mb-2">
+              Step-By-Step Guide on CSP Navigation
+            </h3>
+            <p class="mb-4">
+              We have created detailed walkthroughs for each process you will
+              need to complete in Coupa, from registering and updating your
+              profile to submitting bids and tracking invoices. Each walkthrough
+              includes step-by-step instructions and screenshots to guide you.
+            </p>
+            <p>
+              You may download the walkthrough PDFs depending on the process you
+              are looking for from the links below:
+            </p>
+            <ul class="list-disc list-inside ml-6 my-4">
+              <li>
+                <a href="#" class="text-indigo-500 hover:underline"
+                  >Account Creation in Coupa Supplier Portal</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-indigo-500 hover:underline"
+                  >Bidding for a Sourcing Opportunity</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-indigo-500 hover:underline"
+                  >Reviewing the Contract</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-indigo-500 hover:underline"
+                  >Acknowledging the Purchase Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-indigo-500 hover:underline"
+                  >Creating an Invoice for a Purchase Order</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-indigo-500 hover:underline"
+                  >Creating an Invoice without a Purchase Order</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FAQs and Support Accordion -->
+        <!-- FAQs and Support Accordion -->
+        <div class="mb-4">
+          <button
+            class="flex justify-between items-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            data-target="faqsSupport"
+          >
+            FAQs and Support
+            <svg
+              class="ml-2 h-5 w-5 transition-transform duration-200"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden mt-2 p-4 border border-gray-200 rounded-md bg-gray-50"
+            id="faqsSupport"
+          >
+            <!-- FAQ Content -->
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                How do suppliers join the Coupa Supplier Portal (CSP)?
+              </h3>
+              <p>
+                You will only be able to join after receiving an email
+                invitation from Coupa. Following the email invitation, suppliers
+                will receive a second email from Coupa with a link to register
+                on the Coupa Supplier Portal. Click “Join and Respond” which
+                will redirect you to the Account creation Page.
+              </p>
+              <ol class="list-decimal list-inside ml-6 my-2">
+                <li>Fill in the form to create your account.</li>
+                <li>You will receive an email verification link.</li>
+                <li>
+                  Enter the verification code you received and click next.
+                </li>
+                <li>
+                  You will be redirected to the Coupa Supplier Portal (CSP).
+                </li>
+                <li>
+                  Under “Information Request,” fill in the supplier information
+                  and submit it for approval.
+                </li>
+              </ol>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                If a supplier provides products or services to more than one
+                organization, will the supplier need to re-register on the Coupa
+                Supplier Portal (CSP) for each organization?
+              </h3>
+              <p>
+                Yes, if the supplier provides services to more than one
+                organization, the supplier needs to register each organization
+                in the Coupa Supplier Portal (CSP).
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                I am having an issue logging in, what can I try?
+              </h3>
+              <ol class="list-decimal list-inside ml-6 my-2">
+                <li>
+                  Ensure you are not using the browser's auto-populating feature
+                  to enter your username and password.
+                </li>
+                <li>Try using a different browser or incognito mode.</li>
+              </ol>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                How do I participate in a sourcing event?
+              </h3>
+              <ol class="list-decimal list-inside ml-6 my-2">
+                <li>
+                  You will receive an email inviting you to participate in a
+                  sourcing event.
+                </li>
+                <li>
+                  Follow the instructions in the email to go to the event.
+                </li>
+                <li>Accept the Terms and Conditions.</li>
+                <li>
+                  Click on the activated "Enter Response" button at the bottom
+                  of the page to view details of the event.
+                </li>
+                <li>Click on the "My Response" tab.</li>
+              </ol>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                How do I get a confirmation that my response was successfully
+                sent?
+              </h3>
+              <p>
+                When you click on the submit button, if the green banner appears
+                on the top of the event page, this means it was submitted. The
+                history at the bottom of the event page would indicate the total
+                amount, response name, and the time of submission.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                Why do I keep getting reminder emails?
+              </h3>
+              <p>
+                You will receive automated emails periodically for various
+                purposes, including approaching the expiry of your registration
+                documents, reminders that a sourcing event is about to close,
+                and any important announcements. If you intend to submit a
+                response, please do so before the event ends. If you have
+                already submitted your response and do not need to make any
+                further changes, you can ignore the reminder emails.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                How can I check my invoice status?
+              </h3>
+              <p>
+                Enter the invoice tab, and in the status column, you can see the
+                current state of the invoice.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                I have submitted an invoice, but I need to edit it. How can I do
+                that?
+              </h3>
+              <p>
+                Once the invoice is submitted, you cannot edit, delete, or
+                cancel it.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                How are payment due dates calculated?
+              </h3>
+              <p>
+                Payment due dates are calculated based on the date of invoice
+                submission on the Coupa Supplier Portal. We use the submission
+                date as the starting point for payment calculations, rather than
+                the date stated on the invoice document itself. This approach
+                ensures accurate and timely payment processing, aligning with
+                our internal systems.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                How can I reset my password?
+              </h3>
+              <p>
+                If you are locked out of the system, contact
+                <a
+                  href="mailto:coupasupport@qnb.com"
+                  class="text-indigo-500 hover:underline"
+                  >coupasupport@qnb.com</a
+                >
+                to reset your password.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">Support</h3>
+              <p>
+                If your question is not on our How-To Guide section or the above
+                FAQ list, or you simply wish to reach out to us, you may email
+                us at
+                <a
+                  href="mailto:coupasupport@qnb.com"
+                  class="text-indigo-500 hover:underline"
+                  >coupasupport@qnb.com</a
+                >. We strive to answer all requests within 72 hours, excluding
+                weekends.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold">
+                Feedback and Improvement Suggestions
+              </h3>
+              <p>
+                If you have any feedback or future suggestions that we can use
+                to improve your experience, don’t hesitate to reach us at
+                <a
+                  href="mailto:coupasupport@qnb.com"
+                  class="text-indigo-500 hover:underline"
+                  >coupasupport@qnb.com</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for Accordions -->
+    <script>
+      const accordions = document.querySelectorAll("button[data-target]");
+
+      accordions.forEach((button) => {
+        button.addEventListener("click", () => {
+          const content = document.getElementById(
+            button.getAttribute("data-target")
+          );
+          content.classList.toggle("hidden");
+
+          const icon = button.querySelector("svg");
+          icon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+  </body>
+</html>
